@@ -1,103 +1,243 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<body style="background-color:f0f5f5;">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Myshift</title>
-<link href="https://myshift.ctrls.in/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="https://myshift.ctrls.in/css/login.css" rel="stylesheet" type="text/css" />
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-<script src="https://myshift.ctrls.in/js/jquery.js"></script>
-<script src="https://myshift.ctrls.in/js/bootstrap.min.js"></script>
+     <title>vinay's Resume</title>
 
-
-
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(imageinsert); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
 </head>
 
 <body>
 
-<div class="login-page">
-	<div class="container">
-        <div class="col-lg-12 text-right"><a href="http://www.ctrls.in" class="text-white">www.ctrls.in</a></div>
-        
-        <span class="clearfix"></span>
-        
-        <div class="row margin20_T">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <img src="https://myshift.ctrls.in/images/login-lt.png" />
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-5 col-lg-5">
-                <div class="login-middle">
-    	<form method="post" class="smart-form" action="/index.php/">
-                    <div class="title">MYSHIFT</div>
-        
-                    <div class="form-horizontal">
-                    <div style='color:rgb(210, 21, 21);text-align:center;'></div>                        <div class="form-group">
-                            <label class="col-xs-5 col-sm-5 control-label">User Name</label>
-                            <div class="col-xs-6 col-sm-6">
-                            <input type="text" name="username" class="form-control">
-                            <b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Please enter username</b>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="col-xs-5 col-sm-5 control-label">Password</label>
-                            <div class="col-xs-6 col-sm-6">
-                            <input type="password" name="password" class="form-control">
-                            <b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Enter your password</b>
-                            </div>
-                        </div>
-                        
-                        <!-- <div class="form-group margin20_T">
-                            <label class="col-xs-5 col-sm-5 control-label">&nbsp;</label>
-                            <div class="col-xs-6 col-sm-6"><button id="submit" name="submit" class="login-btn btn" type="submit" >LOGIN</button></div>
-                        </div> -->
-                        <div class="form-group">
-                            <label class="col-xs-6 col-sm-6 control-label margin10_T">
-								<a href="https://myshift.ctrls.in/dashboard_login/check_login" class="btn btn-success btn-sm" role="button">LOGIN WITH OTP</a>
-							</label>
-                            <div class="col-xs-5 col-sm-5">
-                            <button id="submit" name="submit" class="login-btn btn" type="submit" >LOGIN</button>
-                            </div>
-                        </div>
-                        <div class="form-group margin20_T">
-                            <label class="col-xs-5 col-sm-5 control-label">&nbsp;</label>
-                            <div class="col-xs-6 col-sm-6">
-								<a href="https://myshift.ctrls.in/dashboard/forgotpassword">Forgot Password?</a>
-							</div>
-                        </div>
-                        <span class="clearfix"></span>
-                         <div class="forgot-password">
-								Contact aisupport@cloud4c.com for any queries. 
-                        <!--<a href="">Forgot Password?</a> --></div>
-                        
-                    </div>
-                    <div class="smart-form-bottom" align="top" style="margin-bottom: 5%;font-weight: bolder; ">
-                        <p class="clearfix">Send your kayako username and department to <br />aisupport@cloud4c.com if you are a new user.</p>
-                    </div>
-                </form>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-10 col-md-3 col-lg-3 no-padding">
-                <div class="login-rt">
-                    <ul>
-                        <li><span class="digit">1</span><span class="description">Service Operations</span></li>
-                        <li><span class="digit">2</span><span class="description">Service Transitions</span></li>
-                        <li><span class="digit">3</span><span class="description">Change Request</span></li>
-                        <li><span class="digit">4</span><span class="description">SOPs</span></li>
-                        <li><span class="digit">5</span><span class="description">Tasks</span></li>
-                        <li><span class="digit">6</span><span class="description">Roster</span></li>
-                        <li><span class="digit">7</span><span class="description">Comunications</span></li>
-                    </ul>
-                </div>
-            </div>
+	
+	
+    <div id="page-wrap">
+
+        <img src="redhatlogo.jpg" alt="vish" id="pic" style="width:200px;height:200px;" />
+
+        <div id="contact-info" class="vcard">
+            <h1 class="fn">vinay manne</h1>
+
+            <p>
+                Cell: <span class="tel">+919703887961</span><br />
+                Email: <a class="email" href="mailto:vinaymanne5@gmail.com">vinaymanne5@gmail.com</a>
+            </p>
         </div>
-    
 
-	</div>
-</div>
-<span class="clearfix"></span>
+        <div id="objective">
+            <p>
+                <strong><font color="#323232">Linux systems engineer</font> </strong> </br>
+                <a href="http://www.linkedin.com/in/vinaymanne11">LinkedIn</a> | <a href="https://github.com/vinaymanne5">Github</a> | <a href="https://www.instagram.com/vinaymanne1109/">Instagram</a>
+            </p>
 
-<footer>Copyright CtrlS Datacenters Ltd 2007-2020.</footer>
+        </div>
+
+        <div class="clear"></div>
+        <dl>
+            <dd class="clear"></dd>
+
+             <dt>Summary</dt>
+            <dd>
+			
+                <ul>
+                    <p>Result oriented and hard-working professional with Post Graduation and having 3+ years of experience in IT Industry. Being a quick learner and a sincerely committed towards my work, I seek new challenges that bring best out of me, which not only helps me to improve my career but also contributes to the goal of the Organization.
+                    <br/>
+                </ul>
+		    
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Knowledge summary</dt>
+            <dd>
+                
+                <ul>
+                    <p><strong>
+			Well versed in Red Hat Linux Administration <br/>
+			Well knowledge in Mariadb  & Mysql commands.<br/>
+			Well knowledge in Mariadb  & Mysql commands.<br/>
+			Proficient in AWS Cloud platform and its features which includes EC2, VPC, EBS,<br/>
+			AMI, SNS, RDS, CloudWatch, Cloud Trail, CloudFormation, Autoscaling<br/>
+			CloudFront, IAM, S3, and Route53<br/>
+			Create and configure S3 bucket with restricted policies.<br/>
+			Create AMIs of instances and snapshots from volumes.<br/>
+			Strongly versed in Linux Commands.<br/>
+			Understanding the Booting Process in Linux Administration.<br/>
+			Monitoring Linux servers such as Disk space utilization, CPU utilization, Memory utilization.<br/>
+			Installing and managing Red hat Enterprise Linux.<br/>
+			Create &delete users, and set permissions as per requirement.<br/>
+			Creating the filesystem like ext4, swap, lvm and mounting to directories. <br/>
+			Managed Disks and File System using Logical Volume Management (LVM) on Linux.<br/>
+			Backup management by using tar and dump commands.<br/>
+			Installation of RPM packages as and when required in Linux Servers.<br/>
+			Remote administration and monitoring of the Server using the tool like SSH, TELNET & FTP.<br/>
+			Configuring and implementing automatic backups. <br/>
+			System health checkup using top, ps, iostat, free commands.<br/>
+			Understanding the Requirement & participating in requirement analysis.<br/>
+			Ability to work with team members and understand client requirements.<br/>
+			Programing skills in python, bash shell scripting<br/>
+			Devop’s tool understanding and taking tasks as challenges in docker, ansible tool.<br/>
+                 	Strongly self-motivated, willing to take responsibilities.<br/>
+
+
+						
+                </ul>
+
+            </dd>
+
+            <dd class="clear"></dd>
+
+              <dt>TECHNICAL SKILLS</dt>
+            <dd>
+		
+                <ul>
+			<table style="width:100%">
+ 
+				  <tr>
+				    <td>System Administration:</td>
+				    <td>Centos, Redhat Linux, Apache tomcat, Ftp, Samba and Nfs.
+					LVM, SMTP, SAMBA, DHCP, AWS(Amazon Web Services), dockers VMware, 
+					 python,ansible, GCP, kubernetes. 
+				</td>
+				  </tr>
+				  <tr>
+				    <td>Monitoring tools:</td>
+				    <td>Nagios, Solar Winds, SCOM,  LogRhythm, RPM New Relic, Trend Micron, AWS(CloudWatch).</td>
+				  </tr>
+				  <tr>
+				    <td>Configuration Management Tools:</td>
+				    <td>OTRS(6.8) Impletented, Nagios, zabbix</td>
+				  </tr>
+				  <tr>
+				  <td> Ticketing Tools:</td>
+				  <td>OTRS, Service Now( Incident Management)</td>
+				  </tr>
+
+				</table>
+			
+                </ul>
+		    </dd>
+             
+		    <dd class="cleaer"></dd>
+		<dt>OPERATING SYSTEMS</dt>
+		<dd>
+			<u1>
+				<li> Red Hat Enterprise Linux 6.0/7.0</br>
+				<li> Certified as RHCE by Red Hat RHEL 7.0 Certificate No: 140-220-539.</br>
+		</u1>
+	</dd>
+			
+	<dd class="clear"></dd>
+	<dt>Professional Experience</dt>
+	<dd>
+		<u1>
+			<li> Working as a Linux –AWS Engineer for M/s. Value labs Technologies LLP, Hyderabad.
+			(May 2016 to till date).</br>
+			<li> Worked as a NOC Engineer for Value labs Technologies LLP, Hyderabad.
+			(November 2016 to May 2017).</br>
+	</u1>
+</dd>
+<dd class="clear"></dd>
+<dt>Achivements</dt>
+<dd>
+	<u1>	<li> Successfully implemented OTRS ticketing Tool and moved into production.</br>
+		<li> Received Recognitions and appreciations from managers for OTRS.</br>
+		<li> Received the best performance awards. </br>
+</u1>
+</dd>
+
+<dd class="clear"></dd>
+<dt>Job responsibility</dt>
+<dd>
+	<u1>
+	<li> Working experience in 24x7 environments.</br> 
+	<li> Monitor CPU, Memory, Disk usages, running process by necessary commands. </br>
+	<li> Managing, creating and deletions of User / Group Administration and working on permission for user’s files and directory.</br>
+	<li> Installing packages like Mysql, Apache, Qmail, Samba, Dns, Nfs, and Ftp.</br>
+	<li> Implemented Nagios monitoring tool for all linux and windows servers.</br>
+	<li> Implemented OTRS(6.08) Ticketing tool.</br>
+	<li> Scheduling various regular, periodic, future, queue tasks by using crontab.</br>
+	<li> Taking care of Asset Management, Change Management, Server Management, Data Center Management, Vendor Management and Backup Management.</br>
+	<li> Taking back up of servers by file compression using zip, bzip2, gzip and tar.  </br>
+	<li> Involved in designing and deploying a multitude applications utilizing almost all of theAWS (including EC2, S3, IAM Role, Cloud Watch, VPC, and Route53) focusing on.</br>
+	<li> Configuring the Cloud Watch and creating Alarms for app if the app goes down andmonitor the network traffic.high availability, fault tolerance, and auto scaling.</br>
+	<li> Worked with various AWS EC2 and S3 CLI tools.</br>
+	<li> Launching and configuring of Amazon EC2 Cloud Servers using AMI&#39;s (Linux/Ubuntu)Designed and implemented scalable, secure cloud architecture based on Amazon Web Services.</br>
+	<li> Responsible for continuous Integration(CI) and continuous Delivery(CD) using Jenkins.</br>
+	<li> Responsible for creating Labels, jobs, nodes in Jenkins</br>
+</u1>
+</dd>
+	    
+			<dd class="clear"></dd>
+	
+
+            <dt>Education</dt>
+            <dd>
+                
+                <p><strong>Institution : </strong> 	B.Tech in Computer science Engineering  from Jawaharlal Nehru Technological University, Hyderabad <br/>
+				   <strong>Duration : </strong>  2012 - 2016 <br/>
+                   <strong>GPA : </strong> 6.0</p>
+     
+              
+            </dd>
+
+            <dd class="clear"></dd>
+
+            <dt>Skills</dt>
+            <dd>
+		
+					<h2>Programming Languages</h2>
+               <ul>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>Shell Scripting</li>
+                    
+                </ul>
+
+            <dd class="clear"></dd>
+
+            <dt>Hobbies</dt>
+            <dd>Football, Penetration Testing and Contributing to Open Source Softwares</dd>
+<dd class="clear"></dd>
+<dt>personal Details</dt>
+<dd>
+	<u1>
+		Name		 : MANNE VINAY KUMAR</br>
+		Date of Birth	 : 11/Sep/1994</br>
+		Marital Status	 : Single</br>
+		Languages Spoken : English, Hindi,telugu</br>
+		Passport 	 : Available</br>
+	</u1>
+</dd>
+
+            <dd class="clear"></dd>
+        </dl>
+
+
+    </div>
 
 </body>
+
 </html>
